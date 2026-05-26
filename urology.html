@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sukhakarta Urology & Maternity Hospital</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .service .service-item {
+            box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+        }
+
+        .service .service-item .service-img {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .service .service-item .service-img img {
+            transition: 0.5s;
+        }
+
+        .service .service-item .service-img::before {
+            width: 100%;
+            height: 0;
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            transition: 0.5s;
+            z-index: 5;
+
+        }
+
+        .service .service-item:hover .service-img::before {
+            height: 100%;
+            background: rgba(21, 185, 217, .3);
+        }
+
+        .service .service-item .service-img:hover img {
+            transform: scale(1.3);
+        }
+
+        .service .service-item .service-content {
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .service .service-item .service-content::before {
+            width: 100%;
+            height: 8px;
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: black;
+            transition: 0.5s;
+            z-index: 3;
+        }
+
+        .service .service-item:hover .service-content::before {
+            background: black;
+            height: 100%;
+        }
+
+        .service .service-item .service-content .service-content-inner {
+            transition: 0.5s;
+        }
+
+
+        .service .service-item:hover .service-content .service-content-inner {
+            position: relative;
+            color: var(--bs-white) !important;
+            z-index: 9;
+        }
+
+        .service .service-item:hover .service-content .service-content-inner h5 {
+            color: var(--bs-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Tues : 6.00
+                        am - 10.00 pm, Sunday Closed </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@example.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>(+91)7020018728</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <img src="img/logo1.jpg" alt="" width="90px" height="90px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Treatments</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="urology.html" class="dropdown-item">Urology Department</a>
+                        <a href="gynecology.html" class="dropdown-item">Gynecology Department</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Service</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="service.html" class="dropdown-item">Our Service</a>
+                        <a href="price.html" class="dropdown-item">Details</a>
+                        <a href="team.html" class="dropdown-item">Our Doctor</a>
+                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+   
+    <!-- Full Screen Search End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Urology Department</h1>
+                <a href="" class="h4 text-white">Home</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">Urology Department</a>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Service Start -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="sub-style">
+                    <h4 class="sub-title px-3 mb-0"> Dr. Rahul Ghule, MBBS, MS, DNB </h4>
+                </div>
+                <h1 class="display-3 mb-4">Urology Department</h1>
+                <p class="mb-0">Sukhkarta Urology & Maternity Hospital</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://dranuragurosurgeon.in/wp-content/uploads/2020/09/WhatsApp-Image-2020-08-31-at-1.59.33-PM-300x225.jpeg"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">Telescopic operation pcnl of kidney stones</h5>
+                                <p class="mb-4">The surgery is performed by making a small 1 cm incision in the
+                                    patient's flank area (Figure 1). A tube is placed through the incision into the
+                                    kidney under x-ray guidance. A small telescope is then passed through the tube in
+                                    order to visualize the stone, break it up and remove it from the body.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Acvid_tOb-luvn2Lc7mTyKin_lJ-t0ex1w&s"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">Retrograde intrarenal surgery</h5>
+                                <p class="mb-4">Retrograde intrarenal surgery (RIRS) is a procedure for doing surgery
+                                    within the kidney using a flexible ureteroscope. In RIRS the scope is placed through
+                                    the urethra (the urinary opening) into the bladder and then through the ureter into
+                                    the urine-collecting part of the kidney.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://hmsdesk.com/medical/uploads/1062306739.jpg"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">Cystolithotripsy</h5>
+                                <p class="mb-4">Cystolithotripsy is an advanced treatment for bladder calculi
+                                    management. It is used to treat small or medium-sized urinary bladder stones
+                                    effectively and relieve patients of the painful symptoms they accompany.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpwEjMs-mzCjX5NQGLAtQVXRj1gKzMwadzHQ&s"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">Transurethral resection of the prostate</h5>
+                                <p class="mb-4">Transurethral resection of the prostate (TURP) is a surgical operation
+                                    to relieve obstruction to the flow of urine through the prostate. Transurethral
+                                    resection of the prostate (TURP) is a surgical operation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvroc-qm_QY4CSCzE0IPGxmW3IPD_UUXCkYw&s"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">Optical Urethrotomy</h5>
+                                <p class="mb-4">An Optical Urethrotomy is a procedure for opening up a stricture
+                                    (narrowing) in the urethra (water pipe). A urethral stricture is the medical name
+                                    for a ring of scar tissue surrounding the urinary passage from the bladder.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://media.istockphoto.com/id/914817876/vector/doctor-with-happy-healthy-teeth-vector-illustration.jpg?s=612x612&w=0&k=20&c=7vtPzkyKAPG6ITGT-fchWTe8tn-X2Pi2w70VWlkJKxk="
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">Buccal mucosal graft urethroplasty.</h5>
+                                <p class="mb-4">What is BMG Urethroplasty? It is called Buccal mucosal graft
+                                    urethroplasty. Urethral substitution with grafts was mostly done by using genital
+                                    skin flaps, grafts of genital or extragenital tissue.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://www.shutterstock.com/image-illustration/descriptive-illustration-four-phases-malignant-260nw-1071692570.jpg"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">Laparoscopic Nephrectomy </h5>
+                                <p class="mb-4">In the case of kidney cancer a radical laparoscopic nephrectomy is done.
+                                    This is done in an attempt to rid the body of cancer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2173578613002217-gr2.jpg"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">Laparoscopic pyeloplasty</h5>
+                                <p class="mb-4">Laparoscopic pyeloplasty is a way to perform reconstructive surgery of a
+                                    narrowing or scarring where the ureter (the tube that drains urine from the kidney
+                                    to the bladder) attaches to the kidney through a minimally invasive procedure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--new gg-->
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://www.researchgate.net/publication/7987730/figure/fig3/AS:601677988114440@1520462619461/Anastomosis-between-the-neobladder-and-the-prostatic-capsule_Q320.jpg"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4"> Radical Cystoprostatectomy</h5>
+                                <p class="mb-4">The procedure to remove the entire bladder is called a radical
+                                    cystectomy. In men, this typically includes removal of the prostate and seminal
+                                    vesicles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--gg1-->
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAP-pdMPuqgACFXLp9-t73ew7XQ0VTg48DRQ&s"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">AV fistula</h5>
+                                <p class="mb-4">An AV fistula is a connection that's made between an artery and a vein
+                                    for dialysis access. A surgical procedure, done in the operating room, is required
+                                    to stitch together two vessels to create an AV fistula.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--gg2-->
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://pub.mdpi-res.com/jcm/jcm-12-02208/article_deploy/html/images/jcm-12-02208-g001-550.jpg?1678689668"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">Radical retropubic prostatectomy</h5>
+                                <p class="mb-4">The goal of radical prostatectomy is to remove all prostate cancer. RP
+                                    is used when the cancer is believed to be confined to the prostate gland. During the
+                                    procedure, the prostate gland and some tissuess.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--gg3-->
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded">
+                        <div class="service-img rounded-top">
+                            <img src="https://www.mayoclinic.org/-/media/kcms/gbs/medical-professionals/images/2021/11/10/20/25/bipolar-enucleation-767x535.jpg"
+                                class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                                <h5 class="mb-4">freyers prostatectomy</h5>
+                                <p class="mb-4">A common surgical approach to prostatectomy includes making a surgical
+                                    incision and removing the prostate gland (or part of it). This may be accomplished
+                                    with either of two methods, the retropubic or suprapubic incision.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service End --><!-- Service End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-primary p-5">
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About
+                            Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                            Services</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest
+                            Blog</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About
+                            Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                            Services</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest
+                            Blog</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Near Shreyash Motors,Navathe Square,
+                        Badnera Rd, Amravati, Maharashtra 444605</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>(+91)7020018728</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
+                                class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Sukhakarta Urology And
+                            Maternity Hospital</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white border-bottom"
+                            href="milestonetechnologies.co.in">Milestone Technologies</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
